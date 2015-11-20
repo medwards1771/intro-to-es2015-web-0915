@@ -1,4 +1,4 @@
-class Programmer {
+export default class Programmer {
   constructor(name, language="Ruby"){
     this.name = name;
     this.language = language;
@@ -17,4 +17,3 @@ export function addJavaScript(bestLanguages){
 }
 
 
-export default Programmer;
