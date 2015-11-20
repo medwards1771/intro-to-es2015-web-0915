@@ -1,3 +1,4 @@
+import Ember from 'ember';
 export default class Programmer {
   constructor(name, language="Ruby"){
     this.name = name;
@@ -13,7 +14,9 @@ export default class Programmer {
 export var bestLanguages = ["Ruby", "Elixir"];
 
 export function addJavaScript(bestLanguages){
-  return bestLanguages + ", JavaScript";
+  let newArray = Ember.copy(bestLanguages);
+  newArray.push("JavaScript");
+  return newArray;
 }
 
 
